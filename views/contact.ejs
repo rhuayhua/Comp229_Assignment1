@@ -1,0 +1,37 @@
+<% include partials/header.ejs%>
+<% include partials/main_nav.ejs%>
+<!--We use a backgroung image for the "contact page" view -->
+<main class="bg_contact">
+    <div class="container">
+       <div class="row">
+           <!--We use 2 columns-->
+           <!--Left column to input contact detail and message-->
+           <!--Right column to show my personal information   -->
+            <div class="col-md-6 mycol_InputMessage">
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="First name"><br>
+                    <input class="form-control" type="text" placeholder="Last name"><br>
+                    <input class="form-control" type="text" placeholder="Contact number"><br>
+                    <input class="form-control" type="text" placeholder="Email address"><br>
+                </div>
+                <div class="col-md-6">
+                    <textarea class="form-control" rows="7" placeholder="Leave me a message"></textarea>
+                    <br>
+                    <!--Here we add a button to send the message and go to home page -->
+                    <!--All buttons have the same style defined in CSS-->
+                    <a class="btn" href="/">Send</a>    
+                </div>    
+            </div>
+            <div class="col-md-6 mycol_ContactDetails">
+                <div class="col-md-12">
+                    <br><br>
+                    <h3><b>CONTACT DETAILS</b></h3><br>
+                    <p>Name: Rudy Huayhua</p>
+                    <p>Email: r.huayhua@pucp.pe</p>
+                    <p>Mobile: +16478924225</p>
+                </div>
+            </div>
+       </div>         
+    </div> 
+</main>
+<% include partials/footer.ejs%>

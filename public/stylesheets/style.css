@@ -1,0 +1,123 @@
+/*
+    filename: style.css
+    Student name: Rudy Huayhua
+    Student id: 301229804
+    Date: Feb 05, 2022
+*/ 
+
+body, html  {
+  height: 100%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family:cursive;
+}
+
+.footer i{
+  color: rgb(25, 201, 84);
+}
+
+.btn{
+  background-color: rgba(73, 70, 70, 0.5); 
+  color: white; 
+  border: 2px solid rgb(255, 255, 255);
+
+}
+.btn:hover{
+  background-color: rgb(25, 201, 84);
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+/* --- Home Page --- */
+.bg_home{
+  background-image: url("/assets/images/background_home.jpg");
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+}
+.home_text{
+  padding-top:175px;
+  padding-left: 25px;
+  font-family: sans-serif;
+}
+.home_text h1{
+  color:white;
+}  
+.home_text h3{
+  color: rgb(25, 201, 84);
+}
+.home_text p{
+  font-style: italic;
+  color: white;
+}
+
+/* --- About Page --- */
+.about{
+  padding-top:60px;
+  padding-left: 25px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.about p{
+  padding-top: 70px;
+  text-align: justify;
+}
+.about img{
+  width: 500px;
+  border-radius: 250px;
+}
+
+/* --- Project Page --- */
+.projects{
+  padding-top:60px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.projects h4{
+  text-align:center;
+  font-weight: bold;
+}
+.projects h5{
+  text-align: justify;
+}  
+
+/* --- Service Page --- */
+.service{
+  padding-top:60px;
+  height: 700px;
+}
+.service i{
+  font-size: 100px;
+  background-color:rgb(30, 210, 105);
+  padding: 10px;
+  color: white;
+  border-radius: 50px
+}
+.service p{
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding-top: 30px;
+}
+
+/* ---- Contact Page ----*/
+.bg_contact{
+  background-image: url("/assets/images/background_contact.jpg");
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+}
+.mycol_InputMessage{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
+  padding: 50px;
+  font-family: sans-serif;
+}
+.mycol_ContactDetails{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
+  padding: 80px;
+  font-family: sans-serif;
+  font-size: 20px;
+}

@@ -1,0 +1,65 @@
+<!-- Main Nav bar  -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Here we add our logo -->
+    <a class="navbar-brand" href="#">
+      <img src="/assets/images/logorh.png" alt="logo" style="width:100px;border-radius: 50px;">
+    </a>
+    
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <!--  Home -->
+        <li class="nav-item">
+          <% if (title == "Home") { %>
+              <a class="nav-link active" href="/">
+          <% } else { %>
+              <a class="nav-link" href="/">
+          <% } %>            
+              <i class="fas fa-home"></i> Home </a>
+          </a>
+        </li>
+
+        <!--  About -->
+        <li class="nav-item">
+          <% if (title == "About me") { %>
+              <a class="nav-link active" href="/about">
+          <% } else { %>
+              <a class="nav-link" href="/about">
+          <% } %>            
+              <i class="fas fa-info-circle"></i> About me</a>
+          </a>
+        </li>
+
+        <!--  Projects -->
+        <li class="nav-item">
+          <% if (title == "Projects") { %>
+              <a class="nav-link active" href="/projects">
+          <% } else { %>
+              <a class="nav-link" href="/projects">
+          <% } %>            
+              <i class="fas fa-project-diagram"></i> Projects </a>
+          </a>
+        </li>
+
+        <!--  Services -->
+        <li class="nav-item">
+          <% if (title == "Services") { %>
+              <a class="nav-link active" href="/services">
+          <% } else { %>
+              <a class="nav-link" href="/services">
+          <% } %>            
+              <i class="far fa-list-alt"></i> Services </a>
+          </a>
+        </li>
+
+        <!--  Contact -->
+        <li class="nav-item">
+          <% if (title == "Contact me") { %>
+              <a class="nav-link active" href="/contact">
+          <% } else { %>
+              <a class="nav-link" href="/contact">
+          <% } %>            
+              <i class="fas fa-envelope"></i> Contact me </a>
+          </a>
+        </li>
+    </ul>
+</nav>
