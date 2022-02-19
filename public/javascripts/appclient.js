@@ -5,11 +5,13 @@
     Date: Feb 05, 2022
 */ 
 console.log('This goes to client side.');
+console.log(getTitle);
 
-if(getTitle == "Inventory List"){
+if(getTitle == "Business Contacts" || "Update Contact"){
     let deleteButtons = document.querySelectorAll('.btn-danger');
     
-    console.log('This is Inventory List page.');
+    console.log('This is ...');
+    console.log(getTitle);
     for(button of deleteButtons)
     {
         button.addEventListener('click', (event)=>{

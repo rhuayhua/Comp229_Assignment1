@@ -36,7 +36,7 @@
           <% } else { %>
               <a class="nav-link" href="/projects">
           <% } %>            
-              <i class="fas fa-project-diagram"></i> Projects </a>
+              <i class="fas fa-code"></i> Projects </a>
           </a>
         </li>
 
@@ -51,6 +51,32 @@
           </a>
         </li>
 
+        
+        <!--  Business -->
+<!--        
+        <li class="nav-item dropdown">
+            <% if (title == "Business Contacts" || title == "Add a new Contact") { %>
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business Contacts</a>
+            <% } else { %>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business Contacts</a>
+            <% } %>       
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/business/list">Business Contacts</a></li>
+              <li><a class="dropdown-item" href="/business/add">Add a new Contact</a></li>
+            </ul>
+          </li>
+-->
+        <li class="nav-item">
+          <% if (title == "Business Contacts" || title == "Add a new Contact") { %>
+            <a class="nav-link active " href="/business/list">
+          <% } else { %>
+            <a class="nav-link" href="/business/list">
+          <% } %>
+              <i class="fas fa-mobile-alt"> </i> Business Contacts </a>
+            </a>       
+        </li>
+
+
         <!--  Contact -->
         <li class="nav-item">
           <% if (title == "Contact me") { %>
@@ -58,24 +84,12 @@
           <% } else { %>
               <a class="nav-link" href="/contact">
           <% } %>            
-              <i class="fas fa-envelope"></i> Contact me </a>
+              <i class="fa fa-envelope"></i> Contact me </a>
           </a>
         </li>
-        
-        <!--  Inventory -->
-        <li class="nav-item dropdown">
-            <% if (title == "Inventory List" || title == "Add a new Item") { %>
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Inventory</a>
-            <% } else { %>
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Inventory</a>
-            <% } %>       
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/inventory/list">Inventory List</a></li>
-              <li><a class="dropdown-item" href="/inventory/add">Add a new Item</a></li>
-            </ul>
-          </li>
 
-          <!--  Users -->
+<!--
+         
           <li class="nav-item">
             <% if (title == "Users") { %>
                 <a class="nav-link active" href="/users">
@@ -85,13 +99,14 @@
                 <i class="fas fa-user"></i> Users </a>
             </a>
           </li> 
+-->
 
           <!--  Sign-in -->
           <li class="nav-item">  
             <% if (typeof userName == 'string' && userName) { %>
-              <a class="nav-link" href="/users/signout" onclick="return confirm('Are you sure?')">Sign Out (<%= userName %>)</a>
+              <a class="nav-link" href="/users/signout"  onclick="return confirm('Are you sure?')">  <i class="fas fa-user-check"></i> <%= userName %> | Logout <i class="fas fa-sign-out-alt"></i> </a>
             <% } else { %>
-              <a class="nav-link" href="/users/signin">Signin</a>
+              <a class="nav-link" href="/users/signin"> <i class="fas fa-sign-in-alt"></i> Login</a>
             <% } %>            
           </li> 
 
