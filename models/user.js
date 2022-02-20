@@ -1,7 +1,7 @@
 let mongoose = require('mongoose');
 let crypto = require('crypto');
 
-// Create a model class
+// Here we create a model class for users
 let UserSchema = mongoose.Schema(
     {
         firstName: String,
@@ -29,6 +29,7 @@ let UserSchema = mongoose.Schema(
         }
     },
     {
+        // we use a collection named user in our db
         collection: "user"
     }
 );

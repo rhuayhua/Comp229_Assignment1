@@ -1,8 +1,17 @@
+/*
+    filename: app.js
+    Student name: Rudy Huayhua
+    Student id: 301229804
+    Date: Feb 19, 2022
+*/ 
+
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
+
+// Here we import modules for authentication
 let session = require('express-session');
 let flash = require('connect-flash');
 let passport = require('passport');
@@ -16,6 +25,7 @@ let businessRouter = require('../routes/business');
 
 let app = express();
 
+//Here we configure the session
 app.use(session({
   saveUninitialized: true,
   resave: true,
@@ -37,7 +47,7 @@ app.use(express.static(path.join(__dirname, '../node_modules')));
 
 
 
-// Sets up passport
+// Here we set up the passport module
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());

@@ -2,11 +2,12 @@
     filename: appclients.js
     Student name: Rudy Huayhua
     Student id: 301229804
-    Date: Feb 05, 2022
+    Date: Feb 19, 2022
 */ 
 console.log('This goes to client side.');
 console.log(getTitle);
 
+// We compare if page title is "Business Contacts" or "Update Contact" to verify delete action
 if(getTitle == "Business Contacts" || "Update Contact"){
     let deleteButtons = document.querySelectorAll('.btn-danger');
     
@@ -23,6 +24,7 @@ if(getTitle == "Business Contacts" || "Update Contact"){
     }
 }
 
+// We compare if page title is  "Sign-up Form" to verify if password and password_confirm are different
 if(getTitle == "Sign-up Form")
 {
     console.log('This is Sign-up form.');

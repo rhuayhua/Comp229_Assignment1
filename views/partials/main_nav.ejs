@@ -51,21 +51,7 @@
           </a>
         </li>
 
-        
-        <!--  Business -->
-<!--        
-        <li class="nav-item dropdown">
-            <% if (title == "Business Contacts" || title == "Add a new Contact") { %>
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business Contacts</a>
-            <% } else { %>
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business Contacts</a>
-            <% } %>       
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/business/list">Business Contacts</a></li>
-              <li><a class="dropdown-item" href="/business/add">Add a new Contact</a></li>
-            </ul>
-          </li>
--->
+        <!--  Business Contacts -->
         <li class="nav-item">
           <% if (title == "Business Contacts" || title == "Add a new Contact") { %>
             <a class="nav-link active " href="/business/list">
@@ -75,7 +61,6 @@
               <i class="fas fa-mobile-alt"> </i> Business Contacts </a>
             </a>       
         </li>
-
 
         <!--  Contact -->
         <li class="nav-item">
@@ -88,20 +73,7 @@
           </a>
         </li>
 
-<!--
-         
-          <li class="nav-item">
-            <% if (title == "Users") { %>
-                <a class="nav-link active" href="/users">
-            <% } else { %>
-                <a class="nav-link" href="/users">
-            <% } %>            
-                <i class="fas fa-user"></i> Users </a>
-            </a>
-          </li> 
--->
-
-          <!--  Sign-in -->
+          <!--  Sign-in, Sign-out -->
           <li class="nav-item">  
             <% if (typeof userName == 'string' && userName) { %>
               <a class="nav-link" href="/users/signout"  onclick="return confirm('Are you sure?')">  <i class="fas fa-user-check"></i> <%= userName %> | Logout <i class="fas fa-sign-out-alt"></i> </a>
